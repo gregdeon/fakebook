@@ -30,7 +30,6 @@ $(OUT)/%.pdf: $(SRC)/%.tex $(SONGS_PDF)
 	$(LC) $(LFLAGS) $<
 	$(LC) $(LFLAGS) $<
 	mv $(LDIR)/$(@F) $@
-	echo $(SONGS_PDF)
 
 all: $(OUT)/$(PDF)
 
