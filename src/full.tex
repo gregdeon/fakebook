@@ -1,0 +1,30 @@
+\documentclass[titlepage]{article}
+
+\usepackage{pdfpages}
+\includepdfset{pagecommand=\thispagestyle{plain}}
+
+\newcommand{\song}[2]
+{
+	\addcontentsline{toc}{section}{#1}
+	\includepdf[pages=-]{out/songs/#2.pdf}
+}
+
+\title{Greg's Fakebook}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\pagenumbering{arabic}
+
+\tableofcontents
+\clearpage
+
+\pagenumbering{arabic}
+
+\song{Rustboro City}{rustboro_city}
+\song{Blue Skies}{blue_skies}
+
+
+\end{document}
