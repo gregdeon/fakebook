@@ -80,6 +80,36 @@ harmonies = \chordmode {
   ges1:7
   f1:maj7
   f1:maj7
+
+  ges1:maj7
+  ges1:maj7
+  b1:7
+  b1:7
+
+  ges1:min7
+  ges1:min7
+  d1:7
+  d1:7
+
+  g1:min7
+  g1:min7
+  ees1:7
+  ees1:7
+
+  a1:min7
+  d1:7.9-
+  g1:min7
+  c1:7.9-
+
+  f1:maj7
+  f1:maj7
+  g1:7
+  g1:7
+
+  g1:min7
+  ges1:7
+  f1:maj7
+  ges1:7
 }
 
 key = c
