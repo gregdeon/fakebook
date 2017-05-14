@@ -1,5 +1,3 @@
-%\version "2.18.2"
-
 \header {
   title = "Rustboro City"
   subtitle = "(Pokemon Ruby/Sapphire)"
@@ -53,7 +51,7 @@ melody = \relative bes' {
 }
 
 harmonies = \chordmode {
-  r2..
+  s2..
   bes1:maj7
   bes1:maj7  
   c1:min7
@@ -96,19 +94,7 @@ harmonies = \chordmode {
   d1:dim7
   
   c1:min7
-  c1:dim7
+  c1:7.5-
   bes1:maj7
   bes1:maj7
-}
-
-key = c
-\score {
-  <<
-    \new ChordNames {
-      \set chordChanges = ##t
-      \transpose \key c \harmonies
-    }
-    \new Staff 
-    \transpose \key c \melody
-  >>
 }

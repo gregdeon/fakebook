@@ -1,5 +1,3 @@
-%\version "2.18.2"
-
 \header {
   title = "Summertime"
 }
@@ -38,39 +36,22 @@ harmonies = \chordmode {
   s4
   
   a1:min6
-  b2:dim7
-  e2:7
+  b2:7.5-  e2:7
   a1:min6
   a1:min6
   
   d1:min7
   d1:min7
-  b1:dim7
+  b1:7.5-
   e1:7
   
   a1:min6
-  b2:dim7
-  e2:7
+  b2:7.5-  e2:7
   a1:min6
-  a2:min6
-  g2:7
+  a2:min6  g2:7
   
   c1:maj7
-  b2:dim7
-  e2:7
+  b2:7.5-  e2:7
   a1:min6
   a1:min6
-}
-
-
-key = c
-\score {
-  <<
-    \new ChordNames {
-      \set chordChanges = ##t
-      \transpose \key c \harmonies
-    }
-    \new Staff 
-    \transpose \key c \melody
-  >>
 }

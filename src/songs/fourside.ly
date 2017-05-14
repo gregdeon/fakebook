@@ -1,5 +1,3 @@
-%\version "2.18.2"
-
 \header {
   title = "Fourside"
 }
@@ -63,7 +61,7 @@ harmonies = \chordmode {
   c1:9
   g1:9
   c1:9
-  d2:dim7 d2:13
+  d2:7.5- d2:13
   
   g2:9 f2:maj9
   g2:9 f2:maj9
@@ -105,17 +103,4 @@ harmonies = \chordmode {
   f1:6
   f1:6
   f2:6 ees4:maj9 d4:maj11
-}
-
-
-key = c
-\score {
-  <<
-    \new ChordNames {
-      \set chordChanges = ##t
-      \transpose \key c \harmonies
-    }
-    \new Staff 
-    \transpose \key c \melody
-  >>
 }

@@ -1,5 +1,3 @@
-%\version "2.18.2"
-
 \header {
   title = "Misty"
 }
@@ -86,7 +84,7 @@ harmonies = \chordmode {
   
   a1:min7
   d2:7 f2:7
-  g2:dim7 c2:7.9-
+  g2:7.5- c2:7.9-
   f2:min7 bes2:7
   
   ees1:maj7
@@ -98,17 +96,4 @@ harmonies = \chordmode {
   f2:min7   bes2:7
   ees1:6
   f2:min7   bes2:7
-}
-
-
-key = c
-\score {
-  <<
-    \new ChordNames {
-      \set chordChanges = ##t
-      \transpose \key c \harmonies
-    }
-    \new Staff 
-    \transpose \key c \melody
-  >>
 }

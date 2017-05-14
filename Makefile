@@ -17,14 +17,16 @@ LDIR   = $(SRC)/temp
 LFLAGS = -output-directory=$(LDIR)
 
 # Sheet music compiler and options
-SC = lilypond
+SC = python build-ly.py
 SFLAGS = 
+
+# Default value for key
+KEY = c
 
 # -------
 # Targets
 $(SONGOUT)/%.pdf: $(SONGSRC)/%.ly
-	$(SC) $(SFLAGS) $<
-	mv $(@F) $@
+	$(SC) $(SFLAGS) -i $< -o $@ -k $(KEY)
 
 $(OUT)/%.pdf: $(SRC)/%.tex $(SONGS_PDF)
 	$(LC) $(LFLAGS) $<

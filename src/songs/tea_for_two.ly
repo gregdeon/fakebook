@@ -1,5 +1,3 @@
-%\version "2.18.2"
-
 \header {
   title = "Tea For Two"
 }
@@ -90,16 +88,4 @@ harmonies = \chordmode {
   ees1:7
   aes1:maj7
   aes1:maj7
-}
-
-key = c
-\score {
-  <<
-    \new ChordNames {
-      \set chordChanges = ##t
-      \transpose \key c \harmonies
-    }
-    \new Staff 
-    \transpose \key c \melody
-  >>
 }

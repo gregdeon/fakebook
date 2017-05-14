@@ -1,5 +1,3 @@
-\version "2.18.2"
-
 \header {
   title = "The Great Pumpkin Waltz"
 }
@@ -94,6 +92,7 @@ harmonies = \chordmode {
   d2.:min7
   g2.:7.13-
   
+  
   c2.:min7
   b2.:min7.5+
   bes2.:min13
@@ -108,6 +107,7 @@ harmonies = \chordmode {
   ees2.:maj13
   a2.:min7
   d2.:7.9-
+  
   
   g2.:9
   g2.:9
@@ -129,6 +129,7 @@ harmonies = \chordmode {
   f2.:6
   g2.:aug7
   
+  
   c2.:min7
   b2.:min7.5+
   bes2.:min13
@@ -143,20 +144,4 @@ harmonies = \chordmode {
   ees2.:6.9
   d2.:min7
   g2.:aug7
-}
-
-\layout {
-  indent = #0
-}
-
-key = c
-\score {
-  <<
-    \new ChordNames {
-      \set chordChanges = ##t
-      \transpose \key c \harmonies
-    }
-    \new Staff 
-    \transpose \key c \melody
-  >>
 }

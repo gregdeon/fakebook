@@ -1,5 +1,3 @@
-%\version "2.18.2"
-
 \header {
   title = "Wave"
 }
@@ -70,7 +68,7 @@ melody = \relative d'' {
 }
 
 harmonies = \chordmode {
-  r4.
+  s4.
 
   d1:maj7
   bes1:dim7
@@ -129,17 +127,4 @@ harmonies = \chordmode {
   bes2:9    a2:7
   d2:min7   g2:13
   d2:min7   g2:13
-}
-
-
-key = c
-\score {
-  <<
-    \new ChordNames {
-      \set chordChanges = ##t
-      \transpose \key c \harmonies
-    }
-    \new Staff 
-    \transpose \key c \melody
-  >>
 }

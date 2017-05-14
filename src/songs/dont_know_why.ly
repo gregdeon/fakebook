@@ -1,5 +1,3 @@
-\version "2.18.2"
-
 \header {
   title = "Don't Know Why"
 }
@@ -154,20 +152,4 @@ harmonies = \chordmode {
   c2:7
   f2:7
   bes2:maj7
-}
-
-\layout {
-  indent = #0
-}
-
-key = c
-\score {
-  <<
-    \new ChordNames {
-      \set chordChanges = ##t
-      \transpose \key c \harmonies
-    }
-    \new Staff 
-    \transpose \key c \melody
-  >>
 }

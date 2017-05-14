@@ -1,5 +1,3 @@
-\version "2.18.2"
-
 \header {
   title = "My Favourite Things"
 }
@@ -101,7 +99,7 @@ harmonies = \chordmode {
 
   g2.:maj7
   c2.:maj7
-  fis2.:dim7
+  fis2.:7.5-
   b2.:7
   
   
@@ -122,13 +120,13 @@ harmonies = \chordmode {
 
   g2.:maj7
   c2.:maj7
-  fis2.:dim7
+  fis2.:7.5-
   b2.:7.9-
   
   
   e2.:min7
   e2.:min7
-  fis2.:dim7
+  fis2.:7.5-
   b2.:7
   
   e2.:min7
@@ -153,7 +151,7 @@ harmonies = \chordmode {
   
   g2.:6
   c2.:maj7
-  fis2.:dim7
+  fis2.:7.5-
   b2.:7
 }
 

@@ -1,5 +1,3 @@
-\version "2.18.2"
-
 \header {
   title = "Summer Samba"
 }
@@ -94,20 +92,4 @@ harmonies = \chordmode {
   bes1:7.9
   f1
   f1
-}
-
-\layout {
-  indent = #0
-}
-
-key = c
-\score {
-  <<
-    \new ChordNames {
-      \set chordChanges = ##t
-      \transpose \key c \harmonies
-    }
-    \new Staff 
-    \transpose \key c \melody
-  >>
 }

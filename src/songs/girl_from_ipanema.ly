@@ -1,5 +1,3 @@
-%\version "2.18.2"
-
 \header {
   title = "The Girl from Ipanema"
 }
@@ -110,16 +108,4 @@ harmonies = \chordmode {
   ges1:7
   f1:maj7
   ges1:7
-}
-
-key = c
-\score {
-  <<
-    \new ChordNames {
-      \set chordChanges = ##t
-      \transpose \key c \harmonies
-    }
-    \new Staff 
-    \transpose \key c \melody
-  >>
 }

@@ -1,5 +1,3 @@
-\version "2.18.2"
-
 \header {
   title = "All The Things You Are"
 }
@@ -103,20 +101,4 @@ harmonies = \chordmode {
   ees1:7
   aes1:maj7
   g2:7 c2:7
-}
-
-\layout {
-  indent = #0
-}
-
-key = c
-\score {
-  <<
-    \new ChordNames {
-      \set chordChanges = ##t
-      \transpose \key c \harmonies
-    }
-    \new Staff 
-    \transpose \key c \melody
-  >>
 }
