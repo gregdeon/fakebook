@@ -154,19 +154,3 @@ harmonies = \chordmode {
   fis2.:min7.5-
   b2.:7
 }
-
-\layout {
-  indent = #0
-}
-
-key = c
-\score {
-  <<
-    \new ChordNames {
-      \set chordChanges = ##t
-      \transpose \key c \harmonies
-    }
-    \new Staff 
-    \transpose \key c \melody
-  >>
-}
