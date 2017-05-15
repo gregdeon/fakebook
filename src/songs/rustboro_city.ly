@@ -94,7 +94,7 @@ harmonies = \chordmode {
   d1:dim7
   
   c1:min7
-  c1:7.5-
+  c1:min7.5-
   bes1:maj7
   bes1:maj7
 }

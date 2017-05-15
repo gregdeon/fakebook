@@ -77,7 +77,7 @@ harmonies = \chordmode {
   c1:maj7
   f2:min6 c2:maj7
   f2:min6 c2:maj7
-  d2:7.5- c2:maj7
+  d2:min7.5- c2:maj7
 
   c1:maj7
   f2:min6 c2:maj7

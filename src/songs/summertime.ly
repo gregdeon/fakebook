@@ -36,22 +36,22 @@ harmonies = \chordmode {
   s4
   
   a1:min6
-  b2:7.5-  e2:7
+  b2:min7.5-  e2:7
   a1:min6
   a1:min6
   
   d1:min7
   d1:min7
-  b1:7.5-
+  b1:min7.5-
   e1:7
   
   a1:min6
-  b2:7.5-  e2:7
+  b2:min7.5-  e2:7
   a1:min6
   a2:min6  g2:7
   
   c1:maj7
-  b2:7.5-  e2:7
+  b2:min7.5-  e2:7
   a1:min6
   a1:min6
 }
