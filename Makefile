@@ -1,10 +1,14 @@
+# Default value for key
+KEY = c
+
 PDF = full.pdf
+KEYPDF = full-$(KEY).pdf
 SRC = src
 OUT = out
 SONGDIR = songs
 
 SONGSRC = $(SRC)/$(SONGDIR)
-SONGOUT = $(OUT)/$(SONGDIR)
+SONGOUT = $(OUT)/$(KEY)
 
 SONGS_LY = $(notdir $(wildcard $(SONGSRC)/*.ly)) 
 #SONGS_PDF = $(subst .ly,.pdf,$(SONGS_LY))
@@ -20,19 +24,18 @@ LFLAGS = -output-directory=$(LDIR)
 SC = python build-ly.py
 SFLAGS = 
 
-# Default value for key
-KEY = c
-
 # -------
 # Targets
 $(SONGOUT)/%.pdf: $(SONGSRC)/%.ly
+	mkdir -p $(SONGOUT)
 	$(SC) $(SFLAGS) -i $< -o $@ -k $(KEY)
 
-$(OUT)/%.pdf: $(SRC)/%.tex $(SONGS_PDF)
+$(OUT)/%-$(KEY).pdf: $(SRC)/%.tex $(SONGS_PDF)
 	$(LC) $(LFLAGS) $<
 	$(LC) $(LFLAGS) $<
-	mv $(LDIR)/$(@F) $@
-
-all: $(OUT)/$(PDF)
+	mv $(LDIR)/$(PDF) $@
+#	cp $@ $%-$(KEY).pdf
+	
+all: $(OUT)/$(KEYPDF)
 
 .PRECIOUS: $(SONGOUT)/%.pdf
